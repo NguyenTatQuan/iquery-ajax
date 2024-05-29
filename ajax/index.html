@@ -27,11 +27,33 @@
             <td></td>
             <td><input type="submit" value="Thêm" onclick="addNewSmartPhone()"></td>
         </tr>
+
+    </table>
+</form>
+<form id="update-smartphone" style="display:none;">
+    <h1>Cập Nhật Điện Thoại</h1>
+    <table>
+        <tr>
+            <td><label for="update-producer">Nhà sản xuất:</label></td>
+            <td><input type="text" id="update-producer" placeholder="Nhà sản xuất"></td>
+        </tr>
+        <tr>
+            <td><label for="update-model">Mẫu:</label></td>
+            <td><input type="text" id="update-model" placeholder="Mẫu"></td>
+        </tr>
+        <tr>
+            <td><label for="update-price">Giá:</label></td>
+            <td><input type="text" id="update-price" placeholder="Giá"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Cập Nhật" onclick="updateSmartPhone()"></td>
+        </tr>
     </table>
 </form>
 <h1 id="title">DANH SÁCH ĐIỆN THOẠI</h1>
 <div id="div-btn">
-    <button onclick="successHandler()" id="display">Hiển Thị Danh Sách Điện Thoại</button>
+    <button onclick="successHandler()" id="display">Hiển Thị Danh Sách</button>
     <button onclick="displayFormCreate()" id="display-create">Thêm Điện Thoại Mới</button>
 </div>
 <div id="smartphoneList"></div>

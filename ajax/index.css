@@ -18,6 +18,13 @@
 
 .btn {
     text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -25,7 +32,7 @@ button {
 }
 
 #div-btn {
-    width: 600px;
+    width: 400px;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -39,6 +46,11 @@ h1 {
 }
 
 #add-smartphone {
+    display: none;
+    width: 300px;
+    margin: auto;
+}
+#update-smartphone {
     display: none;
     width: 300px;
     margin: auto;
@@ -69,9 +81,21 @@ form#add-smartphone {
     margin: 20px auto;
     width: 300px;
     animation: fadeIn 1s ease-in-out;
-}
+}form#update-smartphone {
+     background: rgba(255, 255, 255, 0.1);
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+     display: none;
+     margin: 20px auto;
+     width: 300px;
+     animation: fadeIn 1s ease-in-out;
+ }
 
 form#add-smartphone table {
+    width: 100%;
+}
+form#update-smartphone table {
     width: 100%;
 }
 
@@ -80,8 +104,20 @@ form#add-smartphone label {
     display: block;
     margin-bottom: 5px;
 }
+form#update-smartphone label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
 
 form#add-smartphone input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+form#update-smartphone input[type="text"] {
     width: calc(100% - 20px);
     padding: 8px;
     margin-bottom: 10px;
@@ -99,8 +135,21 @@ form#add-smartphone input[type="submit"] {
     transition: background 0.3s ease;
     animation: sparkle 2s infinite alternate;
 }
+form#update-smartphone input[type="submit"] {
+    background: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    animation: sparkle 2s infinite alternate;
+}
 
 form#add-smartphone input[type="submit"]:hover {
+    background: #f06;
+}
+form#update-smartphone input[type="submit"]:hover {
     background: #f06;
 }
 
@@ -120,8 +169,23 @@ form#add-smartphone input[type="submit"]:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: glow 1.5s infinite alternate;
 }
+.btn button {
+    background: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: glow 1.5s infinite alternate;
+}
 
 #div-btn button:hover {
+    background: #f06;
+}
+.btn button:hover {
     background: #f06;
 }
 
