@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>List Smartphone</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<form id="add-smartphone">
+    <h1>Thêm Điện Thoại Mới</h1>
+    <table>
+        <tr>
+            <td><label for="producer">Nhà sản xuất:</label></td>
+            <td><input type="text" id="producer" placeholder="Nhà sản xuất"></td>
+        </tr>
+        <tr>
+            <td><label for="model">Mẫu:</label></td>
+            <td><input type="text" id="model" placeholder="Mẫu"></td>
+        </tr>
+        <tr>
+            <td><label for="price">Giá:</label></td>
+            <td><input type="text" id="price" placeholder="Giá"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Thêm" onclick="addNewSmartPhone()"></td>
+        </tr>
+    </table>
+</form>
+<h1 id="title">DANH SÁCH ĐIỆN THOẠI</h1>
+<div id="div-btn">
+    <button onclick="successHandler()" id="display">Hiển Thị Danh Sách Điện Thoại</button>
+    <button onclick="displayFormCreate()" id="display-create">Thêm Điện Thoại Mới</button>
+</div>
+<div id="smartphoneList"></div>
+</body>
+</html>
